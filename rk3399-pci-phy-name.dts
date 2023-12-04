@@ -1,0 +1,12 @@
+/dts-v1/;
+/plugin/;
+
+/ {
+	compatible = "rockchip,rk3399";
+	fragment@0 {
+		target = <&pcie_phy>;
+		__overlay__ {
+			compatible = "rockchip,rk3399-pcie-phy-new";
+		};
+	};
+};
